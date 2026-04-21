@@ -1,0 +1,32 @@
+[0m01:55:10.975300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a131ba2f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1319c05bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a131b0c4e90>]}
+
+
+============================== 01:55:10.982865 | e6e1db4e-0fc3-41d3-9f13-485b6de684a9 ==============================
+[0m01:55:10.982865 [info ] [MainThread]: Running with dbt=1.11.8
+[0m01:55:10.984144 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'profiles_dir': '/home/adebimpe_data/.dbt', 'fail_fast': 'False', 'quiet': 'False', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'warn_error': 'None', 'debug': 'False', 'log_path': 'logs', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'static_parser': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'empty': 'None'}
+[0m01:55:10.985313 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/adebimpe_data/financial-fraud-analytics-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:55:10.987071 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": false, "command_wall_clock_time": 0.0997994, "process_in_blocks": "0", "process_kernel_time": 0.285343, "process_mem_max_rss": "103420", "process_out_blocks": "8", "process_user_time": 2.208231}
+[0m01:55:10.987911 [debug] [MainThread]: Command `dbt clean` failed at 01:55:10.987736 after 0.10 seconds
+[0m01:55:10.988530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a131982b860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a131945d5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a13197b64b0>]}
+[0m01:55:10.989419 [debug] [MainThread]: Flushing usage events
+[0m01:55:11.378751 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:55:14.102739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b83629280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b857887a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b85658140>]}
+
+
+============================== 01:55:14.108557 | 43fb8e6f-1cc8-406f-8d68-ddd9b2fb90e1 ==============================
+[0m01:55:14.108557 [info ] [MainThread]: Running with dbt=1.11.8
+[0m01:55:14.109662 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_format': 'default', 'version_check': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'no_print': 'None', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'profiles_dir': '/home/adebimpe_data/.dbt', 'fail_fast': 'False', 'empty': 'False'}
+[0m01:55:14.110786 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/adebimpe_data/financial-fraud-analytics-pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:55:14.112405 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.092842735, "process_in_blocks": "0", "process_kernel_time": 0.180673, "process_mem_max_rss": "103764", "process_out_blocks": "8", "process_user_time": 2.108544}
+[0m01:55:14.113468 [debug] [MainThread]: Command `dbt run` failed at 01:55:14.113289 after 0.09 seconds
+[0m01:55:14.114139 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b83237ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b82a3e8a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a5b82a3f890>]}
+[0m01:55:14.114915 [debug] [MainThread]: Flushing usage events
+[0m01:55:14.492847 [debug] [MainThread]: An error was encountered while trying to flush usage events
